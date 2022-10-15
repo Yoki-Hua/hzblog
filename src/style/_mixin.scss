@@ -1,0 +1,23 @@
+@import "theme";
+
+@mixin cm-bg_image($color){
+  background-image: $color;
+  [data-theme="focus"] & {
+    background-image:$background-image-focus
+  }
+  [data-theme="blur"] & {
+    background-image:$background-image-blur
+  }
+}
+@mixin ed-bg_image($color){
+  background-image: $color;
+  [data-theme="focus"] & {
+    background-image:none;
+  }
+  [data-theme="blur"] & {
+    background-image:$background-image-focus
+  }
+}
+
+
+
